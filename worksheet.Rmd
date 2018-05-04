@@ -35,8 +35,8 @@ git commit -m "initial commit"
 ```
 
 ```{bash}
-git config --global user.name ...
-git config --global user.email ...
+git config --global user.name "Miranda Bernard"
+git config --global user.email mlberna1@asu.edu
 ```
 
 ## Checkout the Log
@@ -48,7 +48,8 @@ git log
 ## Exercise 1
 
 ```{bash}
-...
+git status
+git commit -m "saved the file"
 ```
 
 ## Revert
