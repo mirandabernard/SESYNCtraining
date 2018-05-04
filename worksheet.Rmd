@@ -1,0 +1,86 @@
+---
+title: configure git and data shortcut
+editor_options: 
+  chunk_output_type: inline
+---
+
+Miranda Bernard
+SESYNC data workshop
+4 May 2018
+You can take notes in markdown right here without hashtags (which turn something into a title)
+
+# Git in the Shell
+
+The software has no GUI of it’s own, and works through commands always beginning with “git “ given in the shell. The comamnd to turn the “current folder” into a git repo is:
+git init
+
+```{bash}
+git init
+```
+
+Add files to git’s watchlist with the “add” command
+git add worksheet.Rmd
+git status (tells you what's happening)
+
+```{bash}
+git add worksheet.Rmd
+git status
+```
+
+“Commit” updates the added files in a newly labeled version of your project’s history.
+git commit -m "initial commit" (the '-m' makes a message THIS IS NECESSARY)
+
+```{bash}
+git commit -m "initial commit"
+```
+
+```{bash}
+git config --global user.name ...
+git config --global user.email ...
+```
+
+## Checkout the Log
+
+```{bash}
+git log
+```
+
+## Exercise 1
+
+```{bash}
+...
+```
+
+## Revert
+
+```{bash}
+git show
+```
+
+```{bash}
+git revert --no-edit ...
+```
+
+## Configure your clone
+
+```{bash}
+git remote add origin ...
+git push
+```
+
+```{bash}
+git add ...
+git commit ...
+```
+
+```{r}
+file.symlink(
+  from = ...,
+  to = 'data'
+)
+```
+
+```{bash}
+git add README.md
+git commit -m 'just me so far!'
+```
